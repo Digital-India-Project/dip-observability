@@ -1,0 +1,2 @@
+# dip-observability
+Centralized logs, metrics, traces, error tracking, uptime, performance dashboards and alerts.
