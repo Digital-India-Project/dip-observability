@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "1.0.0",
+  "repository": "dip-observability",
+  "package": "@digital-india-project/observability",
+  "version": "0.1.0",
+  "status": "foundation-review",
+  "runtime": "node>=20",
+  "language": "typescript",
+  "moduleFormat": "esm",
+  "publicEntry": "src/index.ts",
+  "owners": ["structured-logging-contracts", "metrics-contracts", "trace-contracts", "health-check-primitives", "alert-rule-validation", "telemetry-redaction"],
+  "dependencies": [],
+  "consumers": ["DIPINDIA", "dip-api", "dip-integrations", "dip-automation", "dip-infrastructure"],
+  "security": {"productionExporterIncluded": false, "telemetryRedactionIncluded": true, "rawPiiAllowed": false, "auditLogDurabilityProvided": false},
+  "verification": {"typecheck": "not-run", "tests": "not-run", "build": "not-run", "integration": "not-run"}
+}
