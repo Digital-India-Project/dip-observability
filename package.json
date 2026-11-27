@@ -1,0 +1,20 @@
+{
+  "name": "@digital-india-project/observability",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Framework-neutral observability contracts and safe telemetry primitives.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "docs", "SECURITY.md"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "tsx --test tests/*.test.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}
